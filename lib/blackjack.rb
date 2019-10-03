@@ -28,7 +28,7 @@ def initial_round
   return sum
 end
 
-ç
+
 
 def invalid_command
   puts "Please enter a valid command"
