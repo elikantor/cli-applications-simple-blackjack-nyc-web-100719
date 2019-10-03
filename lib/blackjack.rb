@@ -28,9 +28,16 @@ def initial_round
   return sum
 end
 
-def hit?(val)
+def hit?(total)
   prompt_user
   get_user_input
+    if 'h'
+      total += deal_card
+    elsif !'h' && !'s'
+      invalid_command
+      prompt_user
+    end
+   return total   
 end
 
 def invalid_command
